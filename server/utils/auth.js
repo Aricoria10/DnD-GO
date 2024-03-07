@@ -35,3 +35,4 @@ module.exports = {
     return jwt.sign({ authenticatedPerson: payload }, secret, { expiresIn: expiration });
   },
 };
+
