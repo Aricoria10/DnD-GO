@@ -6,7 +6,7 @@ const Navbar = () => {
     Auth.logout();
   };
   return (
-    <Navbar className="bg-primary text-light mb-4 py-3 flex-row align-center">
+    <div className="bg-primary text-light mb-4 py-3 flex-row align-center">
       <div className="container flex-row justify-space-between-lg justify-center align-center">
         <div>
           <Link className="text-light" to="/">
@@ -44,7 +44,7 @@ const Navbar = () => {
           )}
         </div>
       </div>
-    </Navbar>
+    </div>
   );
 };
 
