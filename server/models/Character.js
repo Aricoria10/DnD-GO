@@ -1,6 +1,10 @@
 const { Schema, model } = require("mongoose");
 
 const characterSchema = new Schema({
+  characterAuthor: {
+    type: String,
+    required: true,
+  },
   characterName: {
     type: String,
     required: "Add your Character Name",
