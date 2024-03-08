@@ -1,9 +1,8 @@
 import { useQuery } from "@apollo/client";
 
-import ThoughtList from "../components/Navbar";
-import ThoughtForm from "../components/Footer";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import Encounters from "../components/Encounters";
-import { QUERY_THOUGHTS } from "../utils/queries";
 
 const Home = () => {
   const { loading, data } = useQuery(QUERY_THOUGHTS);
@@ -11,22 +10,8 @@ const Home = () => {
 
   return (
     <main>
-      <div className="flex-row justify-center">
-        <div
-          className="col-12 col-md-10 mb-3 p-3"
-          style={{ border: "1px dotted #1a1a1a" }}>
-          <Encounters />
-        </div>
-        <div className="col-12 col-md-8 mb-3">
-          {loading ? (
-            <div>Loading...</div>
-          ) : (
-            <ThoughtList
-              thoughts={thoughts}
-              title="Some Feed for Thought(s)..."
-            />
-          )}
-        </div>
+      <div className="col-12 col-md-10 mb-3 p-3" style={{}}>
+        <Encounters />
       </div>
     </main>
   );
