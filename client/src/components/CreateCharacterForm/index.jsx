@@ -7,7 +7,7 @@ import { QUERY_THOUGHTS, QUERY_ME } from "../../utils/queries";
 
 import Auth from "../../utils/auth";
 
-const ThoughtForm = () => {
+const CharacterForm = () => {
   const [thoughtText, setThoughtText] = useState("");
 
   const [characterCount, setCharacterCount] = useState(0);
@@ -62,22 +62,28 @@ const ThoughtForm = () => {
               />
             </div>
             <div>
-              <input
-                value={characterGender}
-                name="userName"
-                onChange={handleChange}
-                type="text"
-                placeholder="username"
-              />
+              <select value={characterGender} onChange={handleChange}>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Non-binary">Non-binary</option>
+                <option value="Other">Other</option>
+              </select>
             </div>
             <div>
-              <input
-                value={password}
-                name="password"
-                onChange={handleChange}
-                type="password"
-                placeholder="Password"
-              />
+              <select value={characterRace} onChange={handleChange}>
+                <option value="Human">Human</option>
+                <option value="Elf">Elf</option>
+                <option value="Dwarf">Dwarf</option>
+                <option value="Tiefling">Tiefling</option>
+              </select>
+            </div>
+            <div>
+              <select value={characterClass} onChange={handleChange}>
+                <option value="Cleric">Cleric</option>
+                <option value="Fighter">Fighter</option>
+                <option value="Rogue">Rogue</option>
+                <option value="Wizard">Wizard</option>
+              </select>
             </div>
             <button type="submit">Submit</button>
             {error && (
@@ -89,7 +95,7 @@ const ThoughtForm = () => {
         </>
       ) : (
         <p>
-          You need to be logged in to share your thoughts. Please{" "}
+          You need to be logged in to make your character. Please{" "}
           <Link to="/login">login</Link> or <Link to="/signup">signup.</Link>
         </p>
       )}
@@ -97,4 +103,4 @@ const ThoughtForm = () => {
   );
 };
 
-export default ThoughtForm;
+export default CharacterForm;
