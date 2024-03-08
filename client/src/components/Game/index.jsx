@@ -26,8 +26,7 @@ var playGame = function() {
 
   // If choices are the same, it's a tie
   if (userChoice === computerChoice) {
-    ties++;
-    playGame();
+    tieFunction();
 
   // Check every win condition for the player
   } else if (
@@ -35,25 +34,12 @@ var playGame = function() {
     (userChoice === "P" && computerChoice === "R") || 
     (userChoice === "S" && computerChoice === "P")
   ) {
-    window.alert("You win!")
+    winFunction();
 
   // If above conditions failed, assume player lost
   } else {
-    window.alert("You lost!")
-  }
-
-  // Print stats with line breaks
-  window.alert(
-    "Stats:\nWins: " + wins + "\nLosses: " + losses + "\nTies: " + ties
-  );
-
-  // Ask user to play again
-  var playAgain = window.confirm("Play again?");
-
-  // If user pressed OK, run the function again
-  if (playAgain) {
-    playGame();
-  }
+    lossFunction()
+  };
 };
 
 // Run the game for the first time
@@ -81,17 +67,4 @@ const winFunction = function (){
             You defeated the {monster.name}!
         </h1>
     )
-}
-
-var XP = function () {
-  if (CR == 1.0) {
-    characterExperience= +200
-    levelFunction()
-  }
-  if (CR == 2.0)
 };
-
-
-var levelFunction = function() {
-
-}
