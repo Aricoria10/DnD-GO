@@ -62,10 +62,27 @@ playGame();
 const tieFunction = function(){
     return (
         <h1>
-            It is a tie
+            It's a tie! Choose again.
+        </h1>
+    )
+};
+
+const lossFunction = function(){
+    return (
+        <h1>
+            You lose! Play again?
+        </h1>
+    )
+};
+
+const winFunction = function (){
+    return (
+        <h1>
+            You defeated the {monster.name}!
         </h1>
     )
 }
+
 var XP = function () {
   if (CR == 1.0) {
     characterExperience= +200
