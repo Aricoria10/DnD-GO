@@ -1,9 +1,8 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useMutation } from '@apollo/client';
-
-import { ADD_COMMENT } from '../../utils/mutations';
-
+import { ADD_XP } from '../../utils/mutations';
+import { CHANGE_LEVEL } from '../../utils/mutations';
 import Auth from '../../utils/auth';
 
 // Array of options for computer to pick from
