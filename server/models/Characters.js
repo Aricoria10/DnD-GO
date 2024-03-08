@@ -23,7 +23,11 @@ const characterSchema = new Schema({
     required: true,
   },
   characterLevel: {
-    type: Int,
+    type: Number,
+    required: true,
+  },
+  characterExperience: {
+    type: Number,
     required: true,
   }
 });

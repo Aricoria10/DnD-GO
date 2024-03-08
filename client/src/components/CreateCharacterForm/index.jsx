@@ -52,27 +52,33 @@ const ThoughtForm = () => {
             className="flex-row justify-center justify-space-between-md align-center"
             onSubmit={handleFormSubmit}
           >
-            <input
-              value={characterName}
-              name="characterName"
-              onChange={handleChange}
-              type="text"
-              placeholder="CharacterName"
-            />
-            <input
-              value={characterGender}
-              name="userName"
-              onChange={handleChange}
-              type="text"
-              placeholder="username"
-            />
-            <input
-              value={password}
-              name="password"
-              onChange={handleChange}
-              type="password"
-              placeholder="Password"
-            />
+            <div>
+              <input
+                value={characterName}
+                name="characterName"
+                onChange={handleChange}
+                type="text"
+                placeholder="CharacterName"
+              />
+            </div>
+            <div>
+              <input
+                value={characterGender}
+                name="userName"
+                onChange={handleChange}
+                type="text"
+                placeholder="username"
+              />
+            </div>
+            <div>
+              <input
+                value={password}
+                name="password"
+                onChange={handleChange}
+                type="password"
+                placeholder="Password"
+              />
+            </div>
             <button type="submit">Submit</button>
             {error && (
               <div className="col-12 my-3 bg-danger text-white p-3">
