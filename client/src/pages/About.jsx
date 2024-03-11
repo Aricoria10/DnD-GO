@@ -1,10 +1,10 @@
 import React from "react";
 import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
 import AboutUs from "./AboutUs";
-import TeamMember from "./TeamMember";
+import TeamMembers from "./TeamMembers";
 
 function Navbar() {
-  return <div>{/* Navbar content */}</div>;
+  return <div>{/* Navbar */}</div>;
 }
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
             <AboutUs />
           </Route>
           <Route path="/team/:id">
-            <TeamMember />
+            <TeamMembers />
           </Route>
         </Switch>
       </div>
