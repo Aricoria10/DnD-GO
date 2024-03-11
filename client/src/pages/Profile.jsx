@@ -15,6 +15,7 @@ const Profile = () => {
   });
 
   const user = data?.me || data?.user || {};
+  console.log(data)
   if (
     Auth.loggedIn() &&
     /* Run the getProfile() method to get access to the unencrypted token value in order to retrieve the user's username, and compare it to the userParam variable */
@@ -41,6 +42,10 @@ const Profile = () => {
       <h2 className="col-12 col-md-10 bg-dark text-light p-3 mb-5">
         Viewing {userParam ? `${user.username}'s` : "your"} profile.
       </h2>
+
+      <CharacterForm />
+
+
     </div>
   );
 };
