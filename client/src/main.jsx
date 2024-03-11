@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
 import Profile from "./pages/Profile";
+import Encounter from "./pages/Encounter";
 import Error from "./pages/Error";
 
 const router = createBrowserRouter([
@@ -17,27 +18,26 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <Home />,
-      },
-      {
-        path: "/login",
-        element: <Login />,
-      },
-      {
-        path: "/signup",
-        element: <Signup />,
-      },
-      {
-        path: "/me",
-        element: <Profile />,
-      },
-      {
-        path: "/profiles/:profileId",
-        element: <Profile />,
-      },
-    ],
-  },
-]);
+        element: <Home />
+      }, {
+        path: '/login',
+        element: <Login />
+      }, {
+        path: '/signup',
+        element: <Signup />
+      }, {
+        path: '/me',
+        element: <Profile />
+      }, {
+        path: '/profiles/:profileId',
+        element: <Profile />
+      }, {
+        path: '/encounter',
+        element: <Encounter />
+      }
+    ]
+  }
+])
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <RouterProvider router={router} />
