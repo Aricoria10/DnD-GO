@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
 import Profile from "./pages/Profile";
+import Encounter from "./pages/Encounter";
 import Error from "./pages/Error";
 
 const router = createBrowserRouter([
@@ -31,8 +32,8 @@ const router = createBrowserRouter([
         path: '/profiles/:profileId',
         element: <Profile />
       }, {
-        path: '/thoughts/:thoughtId',
-        element: <SingleThought />
+        path: '/encounter',
+        element: <Encounter />
       }
     ]
   }

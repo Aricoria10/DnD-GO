@@ -12,11 +12,11 @@ const Encounters = ({ monster }) => {
     handleAttack(monster);
   };
 
-  const getEncounter = (event) => {
+  function getEncounter() {
+    console.log("hi");
     fetch(
       "https://maps.googleapis.com/maps/api/js?key=AIzaSyAREc5G26pYeKRvU3WItAY7isaJey0VA4g&libraries=places"
     );
-    var map;
     var service;
 
     if (navigator.geolocation) {
@@ -68,19 +68,19 @@ const Encounters = ({ monster }) => {
 
   return (
     <div className="Encounters">
-      <h2>{monster.name}</h2>
+      {/* <h2>{monster.name}</h2>
       <p>Type: {monster.type}</p>
       <p>Level: {monster.level}</p>
       <p>HP: {monster.hp}</p>
-      <form onSubmit={handleFormSubmit}>
+      <form onSubmit={handleFormSubmit}> */}
         <button
           type="submit"
           className="btn btn-primary"
-          onSubmit={getEncounter}
+          onClick={getEncounter}
         >
           Start Encounter
         </button>
-      </form>
+      {/* </form> */}
     </div>
   );
 };
