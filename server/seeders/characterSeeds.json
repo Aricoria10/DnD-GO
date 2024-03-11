@@ -1,0 +1,137 @@
+[
+  {
+    "characterAuthor": "JohnDoe",
+    "characterName": "Arya Stark",
+    "characterGender": "Female",
+    "characterRace": "Human",
+    "characterClass": "Rogue",
+    "characterLevel": 8,
+    "characterExperience": 4500
+  },
+  {
+    "characterAuthor": "JaneSmith",
+    "characterName": "Gandalf",
+    "characterGender": "Male",
+    "characterRace": "Elf",
+    "characterClass": "Wizard",
+    "characterLevel": 15,
+    "characterExperience": 12500
+  },
+  {
+    "characterAuthor": "BobJohnson",
+    "characterName": "Legolas",
+    "characterGender": "Male",
+    "characterRace": "Elf",
+    "characterClass": "Cleric",
+    "characterLevel": 10,
+    "characterExperience": 8000
+  },
+  {
+    "characterAuthor": "AliceWilliams",
+    "characterName": "Thorin Oakenshield",
+    "characterGender": "Male",
+    "characterRace": "Dwarf",
+    "characterClass": "Fighter",
+    "characterLevel": 12,
+    "characterExperience": 9500
+  },
+  {
+    "characterAuthor": "CharlieBrown",
+    "characterName": "Daenerys Targaryen",
+    "characterGender": "Female",
+    "characterRace": "Human",
+    "characterClass": "Rogue",
+    "characterLevel": 11,
+    "characterExperience": 8700
+  },
+  {
+    "characterAuthor": "EmilyJohnson",
+    "characterName": "Frodo Baggins",
+    "characterGender": "Male",
+    "characterRace": "Human",
+    "characterClass": "Fighter",
+    "characterLevel": 7,
+    "characterExperience": 4000
+  },
+  {
+    "characterAuthor": "DavidLee",
+    "characterName": "Lara Croft",
+    "characterGender": "Female",
+    "characterRace": "Human",
+    "characterClass": "Cleric",
+    "characterLevel": 9,
+    "characterExperience": 7000
+  },
+  {
+    "characterAuthor": "SarahSmith",
+    "characterName": "Gimli",
+    "characterGender": "Male",
+    "characterRace": "Dwarf",
+    "characterClass": "Fighter",
+    "characterLevel": 11,
+    "characterExperience": 8200
+  },
+  {
+    "characterAuthor": "MichaelBrown",
+    "characterName": "Sauron",
+    "characterGender": "Male",
+    "characterRace": "Tiefling",
+    "characterClass": "Rogue",
+    "characterLevel": 20,
+    "characterExperience": 20000
+  },
+  {
+    "characterAuthor": "JessicaMiller",
+    "characterName": "Hermione Granger",
+    "characterGender": "Female",
+    "characterRace": "Human",
+    "characterClass": "Wizard",
+    "characterLevel": 13,
+    "characterExperience": 11000
+  },
+  {
+    "characterAuthor": "RyanDavis",
+    "characterName": "Harry Potter",
+    "characterGender": "Male",
+    "characterRace": "Human",
+    "characterClass": "Wizard",
+    "characterLevel": 12,
+    "characterExperience": 10000
+  },
+  {
+    "characterAuthor": "LauraWilson",
+    "characterName": "Bilbo Baggins",
+    "characterGender": "Male",
+    "characterRace": "Dwarf",
+    "characterClass": "Cleric",
+    "characterLevel": 10,
+    "characterExperience": 8000
+  },
+  {
+    "characterAuthor": "DanielTaylor",
+    "characterName": "Gollum",
+    "characterGender": "Male",
+    "characterRace": "Tiefling",
+    "characterClass": "Rogue",
+    "characterLevel": 6,
+    "characterExperience": 3000
+  },
+  {
+    "characterAuthor": "OliviaMartinez",
+    "characterName": "Elrond",
+    "characterGender": "Male",
+    "characterRace": "Elf",
+    "characterClass": "Wizard",
+    "characterLevel": 14,
+    "characterExperience": 12000
+  },
+  {
+    "characterAuthor": "JamesJohnson",
+    "characterName": "Aragorn",
+    "characterGender": "Male",
+    "characterRace": "Human",
+    "characterClass": "Cleric",
+    "characterLevel": 15,
+    "characterExperience": 13000
+  }
+]
