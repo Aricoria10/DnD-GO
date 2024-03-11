@@ -1,7 +1,3 @@
-var wins = 0;
-var ties = 0;
-var losses = 0;
-
 // Array of options for computer to pick from
 var options = ["R", "P", "S"];
 
@@ -25,8 +21,8 @@ var playGame = function() {
 
   // If choices are the same, it's a tie
   if (userChoice === computerChoice) {
-    ties++;
     window.alert("It's a tie!");
+    playGame()
 
   // Check every win condition for the player
   } else if (
@@ -34,12 +30,11 @@ var playGame = function() {
     (userChoice === "P" && computerChoice === "R") || 
     (userChoice === "S" && computerChoice === "P")
   ) {
-    wins++;
     window.alert("You win!");
+
 
   // If above conditions failed, assume player lost
   } else {
-    losses++;
     window.alert("You lost!");
   }
 
@@ -59,3 +54,4 @@ var playGame = function() {
 
 // Run the game for the first time
 playGame();
+
