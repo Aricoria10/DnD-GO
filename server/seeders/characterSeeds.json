@@ -1,42 +1,137 @@
 [
   {
-    "thoughtText": "Everyone knows that debugging is twice as hard as writing a program in the first place. So if you're as clever as you can be when you write it, how will you ever debug it?",
-    "thoughtAuthor": "Brian Kernighan"
+    "characterAuthor": "JohnDoe",
+    "characterName": "Arya Stark",
+    "characterGender": "Female",
+    "characterRace": "Human",
+    "characterClass": "Rogue",
+    "characterLevel": 8,
+    "characterExperience": 4500
   },
   {
-    "thoughtText": "Some of the best programming is done on paper, really. Putting it into the computer is just a minor detail.",
-    "thoughtAuthor": "Max Kanat-Alexander"
+    "characterAuthor": "JaneSmith",
+    "characterName": "Gandalf",
+    "characterGender": "Male",
+    "characterRace": "Wizard",
+    "characterClass": "Wizard",
+    "characterLevel": 15,
+    "characterExperience": 12500
   },
   {
-    "thoughtText": "When you don't create things, you become defined by your tastes rather than ability. Your tastes only narrow & exclude people. So create.",
-    "thoughtAuthor": "Why The Lucky Stiff"
+    "characterAuthor": "BobJohnson",
+    "characterName": "Legolas",
+    "characterGender": "Male",
+    "characterRace": "Elf",
+    "characterClass": "Archer",
+    "characterLevel": 10,
+    "characterExperience": 8000
   },
   {
-    "thoughtText": "I'm not a great programmer; I'm just a good programmer with great habits.",
-    "thoughtAuthor": "Kent Beck"
+    "characterAuthor": "AliceWilliams",
+    "characterName": "Thorin Oakenshield",
+    "characterGender": "Male",
+    "characterRace": "Dwarf",
+    "characterClass": "Warrior",
+    "characterLevel": 12,
+    "characterExperience": 9500
   },
   {
-    "thoughtText": "Walking on water and developing software from a specification are easy if both are frozen.",
-    "thoughtAuthor": "Edward V. Berard"
+    "characterAuthor": "CharlieBrown",
+    "characterName": "Daenerys Targaryen",
+    "characterGender": "Female",
+    "characterRace": "Human",
+    "characterClass": "Dragon Rider",
+    "characterLevel": 11,
+    "characterExperience": 8700
   },
   {
-    "thoughtText": "The most disastrous thing that you can ever learn is your first programming language.",
-    "thoughtAuthor": "Alan Kay"
+    "characterAuthor": "EmilyJohnson",
+    "characterName": "Frodo Baggins",
+    "characterGender": "Male",
+    "characterRace": "Hobbit",
+    "characterClass": "Adventurer",
+    "characterLevel": 7,
+    "characterExperience": 4000
   },
   {
-    "thoughtText": "The most important property of a program is whether it accomplishes the intention of its user.",
-    "thoughtAuthor": "C.A.R. Hoare"
+    "characterAuthor": "DavidLee",
+    "characterName": "Lara Croft",
+    "characterGender": "Female",
+    "characterRace": "Human",
+    "characterClass": "Explorer",
+    "characterLevel": 9,
+    "characterExperience": 7000
   },
   {
-    "thoughtText": "Delivering good software today is often better than perfect software tomorrow, so finish things and ship.",
-    "thoughtAuthor": "David Thomas"
+    "characterAuthor": "SarahSmith",
+    "characterName": "Gimli",
+    "characterGender": "Male",
+    "characterRace": "Dwarf",
+    "characterClass": "Warrior",
+    "characterLevel": 11,
+    "characterExperience": 8200
   },
   {
-    "thoughtText": "If you optimize everything, you will always be unhappy.",
-    "thoughtAuthor": "Donald Knuth"
+    "characterAuthor": "MichaelBrown",
+    "characterName": "Sauron",
+    "characterGender": "Male",
+    "characterRace": "Maia",
+    "characterClass": "Dark Lord",
+    "characterLevel": 20,
+    "characterExperience": 20000
   },
   {
-    "thoughtText": "It's not a bug; it's an undocumented feature.",
-    "thoughtAuthor": "Lernantino"
+    "characterAuthor": "JessicaMiller",
+    "characterName": "Hermione Granger",
+    "characterGender": "Female",
+    "characterRace": "Human",
+    "characterClass": "Witch",
+    "characterLevel": 13,
+    "characterExperience": 11000
+  },
+  {
+    "characterAuthor": "RyanDavis",
+    "characterName": "Harry Potter",
+    "characterGender": "Male",
+    "characterRace": "Human",
+    "characterClass": "Wizard",
+    "characterLevel": 12,
+    "characterExperience": 10000
+  },
+  {
+    "characterAuthor": "LauraWilson",
+    "characterName": "Bilbo Baggins",
+    "characterGender": "Male",
+    "characterRace": "Hobbit",
+    "characterClass": "Burglar",
+    "characterLevel": 10,
+    "characterExperience": 8000
+  },
+  {
+    "characterAuthor": "DanielTaylor",
+    "characterName": "Gollum",
+    "characterGender": "Male",
+    "characterRace": "Hobbit",
+    "characterClass": "Sneak",
+    "characterLevel": 6,
+    "characterExperience": 3000
+  },
+  {
+    "characterAuthor": "OliviaMartinez",
+    "characterName": "Elrond",
+    "characterGender": "Male",
+    "characterRace": "Elf",
+    "characterClass": "Noble",
+    "characterLevel": 14,
+    "characterExperience": 12000
+  },
+  {
+    "characterAuthor": "JamesJohnson",
+    "characterName": "Aragorn",
+    "characterGender": "Male",
+    "characterRace": "Human",
+    "characterClass": "Ranger",
+    "characterLevel": 15,
+    "characterExperience": 13000
   }
 ]
