@@ -12,6 +12,7 @@ import Footer from "./components/Footer";
 import "./App.css";
 
 
+
 // Construct our main GraphQL API endpoint
 const httpLink = createHttpLink({
   uri: "/graphql",
