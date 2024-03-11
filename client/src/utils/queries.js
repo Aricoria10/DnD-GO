@@ -44,17 +44,22 @@ export const QUERY_SINGLE_THOUGHT = gql`
 `;
 
 export const QUERY_ME = gql`
-  query me {
-    me {
+query me {
+  me {
+    _id
+    characters {
+      characterAuthor
+      characterClass
+      characterExperience
+      characterGender
+      characterLevel
+      characterName
+      characterRace
       _id
-      username
-      email
-      thoughts {
-        _id
-        thoughtText
-        thoughtAuthor
-        createdAt
-      }
     }
+    email
+    password
+    username
   }
+}
 `;

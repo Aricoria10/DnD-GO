@@ -12,7 +12,7 @@
     "characterAuthor": "JaneSmith",
     "characterName": "Gandalf",
     "characterGender": "Male",
-    "characterRace": "Wizard",
+    "characterRace": "Elf",
     "characterClass": "Wizard",
     "characterLevel": 15,
     "characterExperience": 12500
@@ -22,7 +22,7 @@
     "characterName": "Legolas",
     "characterGender": "Male",
     "characterRace": "Elf",
-    "characterClass": "Archer",
+    "characterClass": "Cleric",
     "characterLevel": 10,
     "characterExperience": 8000
   },
@@ -31,7 +31,7 @@
     "characterName": "Thorin Oakenshield",
     "characterGender": "Male",
     "characterRace": "Dwarf",
-    "characterClass": "Warrior",
+    "characterClass": "Fighter",
     "characterLevel": 12,
     "characterExperience": 9500
   },
@@ -40,7 +40,7 @@
     "characterName": "Daenerys Targaryen",
     "characterGender": "Female",
     "characterRace": "Human",
-    "characterClass": "Dragon Rider",
+    "characterClass": "Rogue",
     "characterLevel": 11,
     "characterExperience": 8700
   },
@@ -48,8 +48,8 @@
     "characterAuthor": "EmilyJohnson",
     "characterName": "Frodo Baggins",
     "characterGender": "Male",
-    "characterRace": "Hobbit",
-    "characterClass": "Adventurer",
+    "characterRace": "Human",
+    "characterClass": "Fighter",
     "characterLevel": 7,
     "characterExperience": 4000
   },
@@ -58,7 +58,7 @@
     "characterName": "Lara Croft",
     "characterGender": "Female",
     "characterRace": "Human",
-    "characterClass": "Explorer",
+    "characterClass": "Cleric",
     "characterLevel": 9,
     "characterExperience": 7000
   },
@@ -67,7 +67,7 @@
     "characterName": "Gimli",
     "characterGender": "Male",
     "characterRace": "Dwarf",
-    "characterClass": "Warrior",
+    "characterClass": "Fighter",
     "characterLevel": 11,
     "characterExperience": 8200
   },
@@ -75,8 +75,8 @@
     "characterAuthor": "MichaelBrown",
     "characterName": "Sauron",
     "characterGender": "Male",
-    "characterRace": "Maia",
-    "characterClass": "Dark Lord",
+    "characterRace": "Tiefling",
+    "characterClass": "Rogue",
     "characterLevel": 20,
     "characterExperience": 20000
   },
@@ -85,7 +85,7 @@
     "characterName": "Hermione Granger",
     "characterGender": "Female",
     "characterRace": "Human",
-    "characterClass": "Witch",
+    "characterClass": "Wizard",
     "characterLevel": 13,
     "characterExperience": 11000
   },
@@ -102,8 +102,8 @@
     "characterAuthor": "LauraWilson",
     "characterName": "Bilbo Baggins",
     "characterGender": "Male",
-    "characterRace": "Hobbit",
-    "characterClass": "Burglar",
+    "characterRace": "Dwarf",
+    "characterClass": "Cleric",
     "characterLevel": 10,
     "characterExperience": 8000
   },
@@ -111,8 +111,8 @@
     "characterAuthor": "DanielTaylor",
     "characterName": "Gollum",
     "characterGender": "Male",
-    "characterRace": "Hobbit",
-    "characterClass": "Sneak",
+    "characterRace": "Tiefling",
+    "characterClass": "Rogue",
     "characterLevel": 6,
     "characterExperience": 3000
   },
@@ -121,7 +121,7 @@
     "characterName": "Elrond",
     "characterGender": "Male",
     "characterRace": "Elf",
-    "characterClass": "Noble",
+    "characterClass": "Wizard",
     "characterLevel": 14,
     "characterExperience": 12000
   },
@@ -130,7 +130,7 @@
     "characterName": "Aragorn",
     "characterGender": "Male",
     "characterRace": "Human",
-    "characterClass": "Ranger",
+    "characterClass": "Cleric",
     "characterLevel": 15,
     "characterExperience": 13000
   }
