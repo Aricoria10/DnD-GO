@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import Game from "../components/Game";
 
 const Encounter = () => {
   const [places, setPlaces] = useState([]);
@@ -37,7 +38,17 @@ const Encounter = () => {
           </li>
         ))}
       </ul>
+
+      <button
+          type="submit"
+          className="btn btn-primary"
+          onClick={Encounter}
+        >
+          Start Encounter
+        </button>
+                      
     </div>
+    
   );
 };
 
