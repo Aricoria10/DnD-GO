@@ -10,6 +10,7 @@ import Profile from "./pages/Profile";
 import Encounter from "./pages/Encounter";
 import Error from "./pages/Error";
 
+
 const router = createBrowserRouter([
   {
     path: "/",

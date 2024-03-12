@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import Game from "../components/Game";
 
 const Encounter = () => {
   const [places, setPlaces] = useState([]);
@@ -43,6 +44,7 @@ const Encounter = () => {
 
   // console.log(places[0].types[0])
   return (
+
     <div>
       <h2>Nearby Places</h2>
       <ul>
@@ -55,7 +57,15 @@ const Encounter = () => {
           </li>
         ))}
       </ul>
+
+      
+        <div>
+        <Game />
+        </div>
+      
+                      
     </div>
+    
   );
 };
 
