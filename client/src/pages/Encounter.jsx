@@ -29,19 +29,33 @@ const Encounter = () => {
     fetchData();
   }, []);
 
-  const getMonster = async (enviroment) => {
-        try {
-          const response = await axios.get(
-            "https://floating-headland-95050.herokuapp.com/https://api.open5e.com/monsters/?cr=3",
-          );
-          console.log(response.data.results);
-          console.log(enviroment);
-        } catch (error) {
-          console.error("Error fetching monster:", error);
-        }
-      };
+  const getMonster = async (environment, i) => {
+    let monsterChoice;
+    try {
+      const response = await axios.get(
+        "https://floating-headland-95050.herokuapp.com/https://api.open5e.com/monsters/?cr=3"
+      );
+      const monsterList = response.data.results;
+      const mappedMonsters = monsterList.map((monster, i) => ({
+        name: monster.name,
+        environments: monster.environments,
+      }))
+      monsterChoice = mappedMonsters
+      console.log(monsterChoice[i]);
+    } catch (error) {
+      console.error("Error fetching monster:", error);
+    }
+    // console.log(monsterChoice.environment);
+    if (environment === "restaurant") {
+      // const filteredMonsters = monsterChoice.filter(checkMonster)
+      // function checkMonster(monsterChoice) {
+      //   return monsterChoice.enviroment === "Jungle"
+      // }
+      // Math.floor(Math.random(filteredmonsters[i]))
+      // console.log(filteredMonsters);
+    }
+  };
 
-  // console.log(places[0].types[0])
   return (
     <div>
       <h2>Nearby Places</h2>
