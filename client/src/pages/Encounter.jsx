@@ -2,6 +2,9 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Game from "../components/Game";
 
+
+
+
 const Encounter = () => {
   const [places, setPlaces] = useState([]);
 
@@ -24,8 +27,8 @@ const Encounter = () => {
 
     fetchData();
   }, []);
-  console.log(places)
-  return (
+  console.log(places);
+    return (
     <div>
       <h2>Nearby Places</h2>
       <ul>
@@ -39,13 +42,11 @@ const Encounter = () => {
         ))}
       </ul>
 
-      <button
-          type="submit"
-          className="btn btn-primary"
-          onClick={Encounter}
-        >
-          Start Encounter
-        </button>
+      
+        <div>
+        <Game />
+        </div>
+      
                       
     </div>
     
