@@ -15,10 +15,7 @@ const Navbar = () => {
         </div>
         <div>
           {Auth.loggedIn() ? (
-            <>
-            <Link className="btn btn-lg btn-info m-2" to="/encounter">
-                {/* TODO: display the user's username */} Encounter
-              </Link>
+            <>            
               <Link className="btn btn-lg btn-info m-2" to="/me">
                 {/* TODO: display the user's username */} Create Character
               </Link>

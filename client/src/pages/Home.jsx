@@ -1,7 +1,7 @@
 // import { useQuery } from "@apollo/client";
+import { Link } from "react-router-dom";
 
 
-// import Encounters from "../components/Encounters";
 
 const Home = () => {
   // const { loading, data } = useQuery(QUERY_THOUGHTS);
@@ -9,15 +9,14 @@ const Home = () => {
 
   return (
     <main>
-      <div className="col-12 col-md-10 mb-3 p-3" style={{}}>
-        {/* <Encounters /> */}
-      </div>
+      <Link className="btn btn-lg btn-info m-2" to="/encounter">
+                {/* TODO: display the user's username */} Start Encounter
+      </Link>      
     </main>
   );
 };
 
 export default Home;
-
 
 
 
