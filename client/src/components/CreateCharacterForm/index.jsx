@@ -1,13 +1,22 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Auth from "../../utils/auth";
+import { useMutation } from '@apollo/client';
+import { ADD_CHARACTER } from "../../utils/mutations";
+import { QUERY_ME } from '../../utils/queries';
 
 const CharacterForm = () => {
   const [characterName, setCharacterName] = useState("");
   const [characterGender, setCharacterGender] = useState("Male");
   const [characterRace, setCharacterRace] = useState("Human");
   const [characterClass, setCharacterClass] = useState("Cleric");
-  const [error, setError] = useState("");
+
+  const [addCharacter, { error }] = useMutation
+  (ADD_CHARACTER, {
+    refetchQueries: [
+      { query: QUERY_ME }
+    ]
+  });
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -32,7 +41,15 @@ const CharacterForm = () => {
   const handleFormSubmit = async (event) => {
     event.preventDefault();
     try {
-      // Your addCharacter logic goes here
+      const { data } = await addCharacter ({
+        variables: {
+          characterAuthor: Auth.getProfile().authenticatedPerson.username,
+          characterName,
+          characterGender,
+          characterRace,
+          characterClass,
+        },
+      });
     } catch (err) {
       console.error(err);
       setError("An error occurred while submitting the form.");

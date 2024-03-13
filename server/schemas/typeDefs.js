@@ -24,6 +24,7 @@ const typeDefs = `
   }
 
   type Query {
+    characters: Character
     users: [User]
     user(username: String!): User
     me: User
