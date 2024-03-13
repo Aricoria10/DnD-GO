@@ -5,7 +5,7 @@ function TeamMembers() {
     {
       id: 1,
       name: "Ashley Nord",
-      image: "",
+      image: (src = "./assets/ashNord-pic.jpeg"),
       bio: "",
       technologies: "",
       role: "",
@@ -13,7 +13,7 @@ function TeamMembers() {
     {
       id: 2,
       name: "Aletheia Bentley",
-      image: "",
+      image: src - "../assets/Aletheia.jpg",
       bio: "",
       technologies: "",
       role: "",
@@ -23,7 +23,7 @@ function TeamMembers() {
       name: "Jazmin Nova",
       image: "",
       bio: "",
-      technologies: "",
+      technologies: (src = "../assets/Jazz-aboutus-pic.jpeg"),
       role: "",
     },
   ];
