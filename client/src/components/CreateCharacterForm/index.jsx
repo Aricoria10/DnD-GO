@@ -1,42 +1,47 @@
-// import { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
-// import { useMutation } from "@apollo/client";
-
-// import {  QUERY_ME } from "../../utils/queries";
-
 import Auth from "../../utils/auth";
 
 const CharacterForm = () => {
-  
-  // const handleFormSubmit = async (event) => {
-  //   event.preventDefault();
-  //   try {
-  //     const { data } = await addThought({
-  //       variables: {
-  //         thoughtText,
-  //         // Run the getProfile() method to get access to the unencrypted token value in order to retrieve the user's username
-  //         thoughtAuthor: Auth.getProfile().authenticatedPerson.username,
-  //       },
-  //     });
+  const [characterName, setCharacterName] = useState("");
+  const [characterGender, setCharacterGender] = useState("Male");
+  const [characterRace, setCharacterRace] = useState("Human");
+  const [characterClass, setCharacterClass] = useState("Cleric");
+  const [error, setError] = useState("");
 
-  //     setThoughtText("");
-  //   } catch (err) {
-  //     console.error(err);
-  //   }
-  // };
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    switch (name) {
+      case "characterName":
+        setCharacterName(value);
+        break;
+      case "characterGender":
+        setCharacterGender(value);
+        break;
+      case "characterRace":
+        setCharacterRace(value);
+        break;
+      case "characterClass":
+        setCharacterClass(value);
+        break;
+      default:
+        break;
+    }
+  };
 
-  // const handleChange = (event) => {
-  //   const { name, value } = event.target;
-
-  //   if (name === "thoughtText" && value.length <= 280) {
-  //     setThoughtText(value);
-  //     setCharacterCount(value.length);
-  //   }
-  // };
+  const handleFormSubmit = async (event) => {
+    event.preventDefault();
+    try {
+      // Your addCharacter logic goes here
+    } catch (err) {
+      console.error(err);
+      setError("An error occurred while submitting the form.");
+    }
+  };
 
   return (
     <div>
-      <h3>What's on your techy mind?</h3>
+      <h3>Make your Adventurer!</h3>
 
       {Auth.loggedIn() ? (
         <>
@@ -54,7 +59,11 @@ const CharacterForm = () => {
               />
             </div>
             <div>
-              <select value={characterGender} onChange={handleChange}>
+              <select
+                value={characterGender}
+                name="characterGender"
+                onChange={handleChange}
+              >
                 <option value="Male">Male</option>
                 <option value="Female">Female</option>
                 <option value="Non-binary">Non-binary</option>
@@ -62,7 +71,11 @@ const CharacterForm = () => {
               </select>
             </div>
             <div>
-              <select value={characterRace} onChange={handleChange}>
+              <select
+                value={characterRace}
+                name="characterRace"
+                onChange={handleChange}
+              >
                 <option value="Human">Human</option>
                 <option value="Elf">Elf</option>
                 <option value="Dwarf">Dwarf</option>
@@ -70,7 +83,11 @@ const CharacterForm = () => {
               </select>
             </div>
             <div>
-              <select value={characterClass} onChange={handleChange}>
+              <select
+                value={characterClass}
+                name="characterClass"
+                onChange={handleChange}
+              >
                 <option value="Cleric">Cleric</option>
                 <option value="Fighter">Fighter</option>
                 <option value="Rogue">Rogue</option>
@@ -80,7 +97,7 @@ const CharacterForm = () => {
             <button type="submit">Submit</button>
             {error && (
               <div className="col-12 my-3 bg-danger text-white p-3">
-                {error.message}
+                {error}
               </div>
             )}
           </form>
