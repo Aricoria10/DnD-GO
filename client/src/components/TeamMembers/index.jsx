@@ -14,9 +14,9 @@ function TeamMembers() {
       id: 2,
       name: "Aletheia Bentley",
       image: "",
-      bio: "",
-      technologies: "",
-      role: "",
+      bio: "test",
+      technologies: "test",
+      role: "test",
     },
     {
       id: 3,

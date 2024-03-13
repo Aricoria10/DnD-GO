@@ -19,7 +19,7 @@ const Navbar = () => {
               <Link className="btn btn-lg btn-info m-2" to="/me">
                 {/* TODO: display the user's username */} Create Character
               </Link>
-              <Link className="btn btn-lg btn-info m-2" to="/me">
+              <Link className="btn btn-lg btn-info m-2" to="/select">
                 {/* TODO: display the user's username */} Choose Character
               </Link>
               <Link className="btn btn-lg btn-light m-2" to="/about">

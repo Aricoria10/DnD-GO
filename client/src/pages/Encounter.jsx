@@ -48,12 +48,12 @@ const Encounter = () => {
     }
     // console.log(monsterChoice.environment);
     if (environment === "restaurant") {
-      // const filteredMonsters = monsterChoice.filter(checkMonster)
-      // function checkMonster(monsterChoice) {
-      //   return monsterChoice.enviroment === "Jungle"
-      // }
-      // Math.floor(Math.random(filteredmonsters[i]))
-      // console.log(filteredMonsters);
+      const filteredMonsters = monsterChoice.filter(checkMonster)
+      function checkMonster(monsterChoice) {
+        return monsterChoice.enviroment === "Jungle"
+      }
+      Math.floor(Math.random(filteredmonsters[i] * i))
+      console.log(filteredMonsters);
     }
   };
 
