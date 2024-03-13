@@ -1,6 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Link, Route } from "react-router-dom";
-import AboutUs from "../components/About-us";
+import AboutUs from "../components/AboutUs";
 import TeamMembers from "../components/TeamMembers";
 
 function Navbar() {
@@ -8,20 +7,11 @@ function Navbar() {
 }
 
 function App() {
-  return (
-    <Router>
-      <div>
-        <Navbar />
-        <Switch>
-          <Route path="/about">
-            <AboutUs />
-          </Route>
-          <Route path="/team/:id">
-            <TeamMembers />
-          </Route>
-        </Switch>
+  return (    
+      <div>       
+        <AboutUs />          
+        <TeamMembers />          
       </div>
-    </Router>
   );
 }
 
