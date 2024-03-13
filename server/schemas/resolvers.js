@@ -3,6 +3,9 @@ const { signToken, AuthenticationError } = require('../utils/auth');
 
 const resolvers = {
   Query: {
+    characters: async () => {
+      return Character.find().populate('characters');
+    },
     users: async () => {
       return User.find().populate('characters');
     },
