@@ -1,7 +1,7 @@
 import React from "react";
-import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
-import AboutUs from "./AboutUs";
-import TeamMembers from "./TeamMembers";
+import { BrowserRouter as Router, Link, Route } from "react-router-dom";
+import AboutUs from "../components/About-us";
+import TeamMembers from "../components/TeamMembers";
 
 function Navbar() {
   return <div>{/* Navbar */}</div>;
