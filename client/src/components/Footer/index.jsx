@@ -1,4 +1,4 @@
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from "react-router-dom";
 
 const Footer = () => {
   const location = useLocation();
@@ -6,25 +6,21 @@ const Footer = () => {
   return (
     <footer className="w-100 mt-auto bg-secondary p-4">
       <div className="container text-center mb-5">
-        {location.pathname !== '/' && (
-          <button
-            className="btn btn-dark mb-3"
-            onClick={() => navigate(-1)}
-          >
+        {location.pathname !== "/" && (
+          <button className="btn btn-dark mb-3" onClick={() => navigate(-1)}>
             &larr; Go Back
           </button>
         )}
         <h4>
-          Made with{' '}
+          Made with{" "}
           <span
             className="emoji"
             role="img"
             aria-label="heart"
-            aria-hidden="false"
-          >
+            aria-hidden="false">
             ❤️
-          </span>{' '}
-          by the Tech Thoughts team.
+          </span>{" "}
+          by the D&D-GO Team.
         </h4>
       </div>
     </footer>
