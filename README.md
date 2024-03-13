@@ -16,7 +16,7 @@
 
 <div align="center">
   <a href="https://github.com/Aricoria10/DnD-GO">
-    <img src="public/images/DnD-GO-logo.png" alt="Logo" width="80" height="80">
+    <img src="client/src/assets/DnD-GO-logo.png" alt="Logo" width="200" height="200">
   </a>
   
   <h3 align="center">DnD-GO</h3>
@@ -65,7 +65,7 @@
 
 ## About The Project
 
-This application is designed for the dungeons and dragons community to gather and connect. Users can create an account to access the app's features. You can start an encounter which will allow you to start the rock, paper, scissors game.
+This application is designed for the dungeons and dragons community to gather and connect. D&D-GO is an immersive game inspired by Dungeons & Dragons. By defeating monsters, players earn experience points to level up and unlock new abilities, facing greater challenges and discovering rare creatures,they can create. D&D-GO has a thrilling adventure around every corner.
 
 Login or Create an Account
 ![login](client/src/assets/encounter.PNG)
@@ -160,11 +160,8 @@ Once the app is functional, screenshots will be added in this section.
 
 #### Future Development
 
-- [ ] Profile page to update personal information
-- [ ] Share book recommendations
-- [ ] Create group to make a book club
-- [ ] Carousel that has a list of your liked/save books
-- [ ] Comment of post of people and recommendations
+- [ ]  Aim to introduce character customization features, allowing players to personalize their avatars
+- [ ] Implement exciting new challenges to elevate the gameplay and provide players with fresh obstacles to overcome
 
 See the [open issues](https://github.com/Aricoria10/DnD-GO/issues) for a full list of proposed features (and known issues).
 
@@ -209,8 +206,7 @@ Project Links:
 
 <!-- !!!IMPORTANT!!! add your deployment link here -->
 
-[Deployment](
-https://DnD-GO-5480ca7bfcf5.herokuapp.com/)
+[Deployment]()
 
 <!-- ACKNOWLEDGMENTS -->
 
