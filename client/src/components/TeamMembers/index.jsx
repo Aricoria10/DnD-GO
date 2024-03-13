@@ -5,7 +5,7 @@ function TeamMembers() {
     {
       id: 1,
       name: "Ashley Nord",
-      image: (src = "./assets/ashNord-pic.jpeg"),
+      image: "",
       bio: "",
       technologies: "",
       role: "",
@@ -13,7 +13,7 @@ function TeamMembers() {
     {
       id: 2,
       name: "Aletheia Bentley",
-      image: src - "../assets/Aletheia.jpg",
+      image: "",
       bio: "",
       technologies: "",
       role: "",
@@ -23,7 +23,7 @@ function TeamMembers() {
       name: "Jazmin Nova",
       image: "",
       bio: "",
-      technologies: (src = "../assets/Jazz-aboutus-pic.jpeg"),
+      technologies: "",
       role: "",
     },
   ];
@@ -38,7 +38,7 @@ function TeamMembers() {
               <div className="bg-white rounded-lg shadow-lg">
                 <div className="p-4">
                   <img
-                    src={member.image}
+                    src={member.id}
                     alt={member.name}
                     className="w-full h-auto"
                   />
