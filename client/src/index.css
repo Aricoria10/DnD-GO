@@ -360,7 +360,8 @@ body {
     Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol";
   font-size: 16px;
-  color: #1a1a1a;
+  color: #000;
+  background-color: #ade022;
 }
 
 h1,
