@@ -65,16 +65,16 @@
 
 ## About The Project
 
-This application is designed for the bookworm community to gather and connect. Users can create an account to access the app's features. You can search for the book you want to add information on, share your thoughts on it, recommend the book to your friends, and contribute any book you're currently reading to the database. Due to time constraints and development complications, many of our ideas will be incorporated into future updates.
+This application is designed for the dungeons and dragons community to gather and connect. Users can create an account to access the app's features. You can start an encounter which will allow you to start the rock, paper, scissors game.
 
 Login or Create an Account
-![login](public/images/loginpage.PNG)
+![login](client/src/assets/encounter.PNG)
 
 Start an Encounter
-![encounter](public/images/search.PNG)
+![encounter](client/src/assets/game.PNG)
 
 Play Rock, Paper, Scissors Game
-![game](public/images/results.PNG)
+![game](client/src/assets/login.PNG)
 
 <!--  -->
 
